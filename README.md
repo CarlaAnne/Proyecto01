@@ -1,10 +1,11 @@
 # Proyecto01
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
-Ademas tiene por objetivo crear el primer proyecto para el desarrollo de aplicaciones usando anguar.
+Ademas tiene por objetivo crear el primer proyecto para el desarrollo de aplicaciones usando angular.
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ademas podemos hacer uso de soporte para [Bootstrap](https://getbootstrap.com/)
 
 ## Code scaffolding
 
