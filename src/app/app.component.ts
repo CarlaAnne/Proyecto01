@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { producto } from './interfaces/producto';
+import { nombre } from './interfaces/nombre';
+import { precio } from './interfaces/precio';
 
 @Component({
   selector: 'app-root',
@@ -68,26 +70,38 @@ export class AppComponent {
     precio: 70
   };
   
-  public funko:producto=this.funkoVacio();
-  public funkos: producto[]=[];
+
+public producto: nombre=this.productoVacio();
+public productos: nombre[]=[];
+
+public precio:precio=this.precioVacio();
+public precios: precio[]=[];
 
    onDatos(): void {
     // this.lista.push(this.alumno.nombre);
-    console.log(this.funko);
-    this.funkos.push(this.funko);
-    this.funko= this.funkoVacio();
-    console.log("el arreglo funkos tiene:",this.funkos.length,"productos")
+    console.log(this.producto);
+    console.log(this.producto);
+    this.productos.push(this.producto);
+    this.producto= this.productoVacio();
+    this.precios.push(this.precio);
+    this.precio= this.precioVacio();
+    console.log("el arreglo cliente tiene:",this.productos.length,"elementos")
+    console.log("el arreglo pago tiene:",this.precios.length,"elementos")
    }
-   
-  funkoVacio(): producto{
+
+   productoVacio(): nombre{
      return{
-       nombre:"",
-       precio: 0
+      nombre:""
      };
    }
+   precioVacio(): precio{
+    return{
+     precio: 0
+    };
+  }
    onEliminar(i:number):void{
     //  this.lista.splice(i,1);
-    this.funkos.splice(i,1);
+    this.productos.splice(i,1);
    }
 
 
